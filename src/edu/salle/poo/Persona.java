@@ -14,4 +14,12 @@ public abstract class Persona {
         this.nacionalitat = nacionalitat;
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nom='" + nom + '\'' +
+                ", dataNaixement=" + dataNaixement +
+                ", nacionalitat='" + nacionalitat + '\'' +
+                '}';
+    }
 }

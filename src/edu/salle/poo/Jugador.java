@@ -19,4 +19,15 @@ public class Jugador extends Persona {
         this.pes = pes;
         this.posicio = posicio;
     }
+
+    @Override
+    public String toString() {
+        String persona = super.toString();
+        return "Jugador{" +
+                persona +
+                "altura=" + altura +
+                ", pes=" + pes +
+                ", posicio='" + posicio + '\'' +
+                '}';
+    }
 }

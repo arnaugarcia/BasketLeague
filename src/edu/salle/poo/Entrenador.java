@@ -16,4 +16,14 @@ public class Entrenador extends Persona {
         this.dataDebut = dataDebut;
         this.titolsAconseguits = titolsAconseguits;
     }
+
+    @Override
+    public String toString() {
+        String entrenador = super.toString();
+        return "Entrenador{" +
+                entrenador +
+                "dataDebut=" + dataDebut +
+                ", titolsAconseguits=" + titolsAconseguits +
+                '}';
+    }
 }
