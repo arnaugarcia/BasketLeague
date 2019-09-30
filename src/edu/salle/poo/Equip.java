@@ -1,6 +1,7 @@
 package edu.salle.poo;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Equip {
@@ -53,6 +54,13 @@ public class Equip {
 
     public void setEntrenador(Entrenador entrenador) {
         this.entrenador = entrenador;
+    }
+
+    public List<Jugador> addJugador(Jugador jugador) {
+        if (jugadors != null) {
+            jugadors.add(jugador);
+        }
+        return new ArrayList<>();
     }
 
     public List<Jugador> getJugadors() {
