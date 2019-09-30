@@ -1,6 +1,7 @@
 package edu.salle.poo;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Equip {
 
@@ -8,15 +9,18 @@ public class Equip {
     private LocalDate dataFundacio;
     private String localitat;
     private Entrenador entrenador;
+    private List<Jugador> jugadors;
 
     public Equip(String nom,
                  LocalDate dataFundacio,
                  String localitat,
-                 Entrenador entrenador) {
+                 Entrenador entrenador,
+                 List<Jugador> jugadors) {
         this.nom = nom;
         this.dataFundacio = dataFundacio;
         this.localitat = localitat;
         this.entrenador = entrenador;
+        this.jugadors = jugadors;
     }
 
     public String getNom() {
@@ -51,6 +55,14 @@ public class Equip {
         this.entrenador = entrenador;
     }
 
+    public List<Jugador> getJugadors() {
+        return jugadors;
+    }
+
+    public void setJugadors(List<Jugador> jugadors) {
+        this.jugadors = jugadors;
+    }
+
     @Override
     public String toString() {
         return "Equip{" +
@@ -58,6 +70,7 @@ public class Equip {
                 ", dataFundacio=" + dataFundacio +
                 ", localitat='" + localitat + '\'' +
                 ", entrenador=" + entrenador +
+                ", jugadors=" + jugadors +
                 '}';
     }
 }
